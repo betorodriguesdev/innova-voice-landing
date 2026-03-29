@@ -24,7 +24,7 @@ const Nav: React.FC = () => {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-sky-400 to-indigo-500 flex items-center justify-center">
             <Phone className="w-4 h-4 text-white" />
           </div>
-          <span className="font-bold text-lg text-white">Innova Voice<span className="text-sky-400"> AI</span></span>
+          <span className="font-bold text-lg text-white">Plannus<span className="text-sky-400"> Voice</span></span>
         </div>
 
         <div className="hidden md:flex items-center gap-8">
@@ -477,7 +477,7 @@ const Footer: React.FC = () => (
       <div className="w-6 h-6 rounded-md bg-gradient-to-br from-sky-400 to-indigo-500 flex items-center justify-center">
         <Phone className="w-3 h-3 text-white" />
       </div>
-      <span className="font-bold text-white">Innova Voice AI</span>
+      <span className="font-bold text-white">Plannus Voice</span>
     </div>
     <p className="text-slate-600 text-sm">© 2025 Innova Flow. Todos os direitos reservados.</p>
   </footer>
