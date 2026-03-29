@@ -20,11 +20,18 @@ const Nav: React.FC = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#0a0f1e]/95 backdrop-blur-md border-b border-white/5 py-3' : 'py-5'}`}>
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-sky-400 to-indigo-500 flex items-center justify-center">
-            <Phone className="w-4 h-4 text-white" />
-          </div>
-          <span className="font-bold text-lg text-white">Plannus<span className="text-sky-400"> Voice</span></span>
+        <div className="flex items-center gap-2.5">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect width="36" height="36" rx="10" fill="url(#lg1)"/>
+            <path d="M6 18 Q9 10 12 18 Q15 26 18 18 Q21 10 24 18 Q27 26 30 18" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+            <defs>
+              <linearGradient id="lg1" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#38bdf8"/>
+                <stop offset="1" stopColor="#6366f1"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span className="font-black text-lg text-white tracking-tight">Plannus<span className="text-sky-400"> Voice</span></span>
         </div>
 
         <div className="hidden md:flex items-center gap-8">
@@ -474,10 +481,17 @@ const FinalCTA: React.FC = () => (
 const Footer: React.FC = () => (
   <footer className="border-t border-white/5 py-8 px-6 text-center">
     <div className="flex items-center justify-center gap-2 mb-3">
-      <div className="w-6 h-6 rounded-md bg-gradient-to-br from-sky-400 to-indigo-500 flex items-center justify-center">
-        <Phone className="w-3 h-3 text-white" />
-      </div>
-      <span className="font-bold text-white">Plannus Voice</span>
+      <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
+        <rect width="36" height="36" rx="10" fill="url(#lg2)"/>
+        <path d="M6 18 Q9 10 12 18 Q15 26 18 18 Q21 10 24 18 Q27 26 30 18" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+        <defs>
+          <linearGradient id="lg2" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#38bdf8"/>
+            <stop offset="1" stopColor="#6366f1"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span className="font-black text-white tracking-tight">Plannus <span className="text-sky-400">Voice</span></span>
     </div>
     <p className="text-slate-600 text-sm">© 2025 Innova Flow. Todos os direitos reservados.</p>
   </footer>
