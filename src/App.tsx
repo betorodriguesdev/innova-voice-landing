@@ -76,7 +76,7 @@ const Hero: React.FC = () => (
       {/* Badge */}
       <div className="inline-flex items-center gap-2 bg-sky-500/10 border border-sky-500/20 rounded-full px-4 py-2 mb-8">
         <span className="w-2 h-2 bg-sky-400 rounded-full animate-pulse" />
-        <span className="text-sky-400 text-sm font-medium">+7 empresas já atendendo 24/7</span>
+        <span className="text-sky-400 text-sm font-medium">Atendimento 24/7 em inglês perfeito</span>
       </div>
 
       <h1 className="text-5xl md:text-7xl font-black text-white leading-[1.05] mb-6">
