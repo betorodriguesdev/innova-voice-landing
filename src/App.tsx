@@ -3,6 +3,7 @@ import {
   Phone, CheckCircle, Star, ArrowRight, Zap, Clock,
   MessageSquare, TrendingUp, Shield, ChevronDown, Menu, X
 } from 'lucide-react'
+import { Onboarding } from './Onboarding'
 
 const PHONE_LINK = 'tel:+17816537984'
 
@@ -499,6 +500,10 @@ const Footer: React.FC = () => (
 
 // ── App ───────────────────────────────────────────────────────────────────────
 export default function App() {
+  if (window.location.pathname === '/onboarding') {
+    return <Onboarding />
+  }
+
   return (
     <div className="min-h-screen bg-[#0a0f1e]">
       <Nav />
