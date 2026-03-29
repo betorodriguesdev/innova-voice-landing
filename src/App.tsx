@@ -4,7 +4,7 @@ import {
   MessageSquare, TrendingUp, Shield, ChevronDown, Menu, X
 } from 'lucide-react'
 
-const WHATSAPP = 'https://wa.me/15085551234?text=Quero%20saber%20mais%20sobre%20o%20Innova%20Voice%20AI'
+const PHONE_LINK = 'tel:+17816537984'
 
 // ── Nav ───────────────────────────────────────────────────────────────────────
 const Nav: React.FC = () => {
@@ -34,9 +34,9 @@ const Nav: React.FC = () => {
           ))}
         </div>
 
-        <a href={WHATSAPP} target="_blank" rel="noreferrer"
+        <a href={PHONE_LINK} target="_blank" rel="noreferrer"
           className="hidden md:flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 hover:scale-105">
-          Começar agora <ArrowRight className="w-4 h-4" />
+          Ligar agora <ArrowRight className="w-4 h-4" />
         </a>
 
         <button className="md:hidden text-slate-400" onClick={() => setOpen(!open)}>
@@ -50,9 +50,9 @@ const Nav: React.FC = () => {
             <a key={item} href={`#${item.toLowerCase().replace(/ /g, '-')}`}
               className="text-slate-300 text-sm" onClick={() => setOpen(false)}>{item}</a>
           ))}
-          <a href={WHATSAPP} target="_blank" rel="noreferrer"
+          <a href={PHONE_LINK} target="_blank" rel="noreferrer"
             className="bg-sky-500 text-white text-sm font-semibold px-5 py-3 rounded-full text-center">
-            Começar agora
+            Ligar agora
           </a>
         </div>
       )}
@@ -90,10 +90,10 @@ const Hero: React.FC = () => (
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href={WHATSAPP} target="_blank" rel="noreferrer"
+        <a href={PHONE_LINK} target="_blank" rel="noreferrer"
           className="flex items-center gap-3 bg-sky-500 hover:bg-sky-400 text-white font-bold text-lg px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 glow w-full sm:w-auto justify-center">
           <Phone className="w-5 h-5" />
-          Quero meu agente agora
+          Ligar agora — teste ao vivo
         </a>
         <a href="#como-funciona"
           className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors font-medium">
@@ -354,9 +354,9 @@ const Pricing: React.FC = () => (
               </li>
             ))}
           </ul>
-          <a href={WHATSAPP} target="_blank" rel="noreferrer"
+          <a href={PHONE_LINK} target="_blank" rel="noreferrer"
             className="block w-full text-center border border-sky-500/40 hover:border-sky-400 text-sky-400 hover:text-white font-semibold py-3.5 rounded-2xl transition-all duration-200">
-            Começar agora
+            Ligar agora
           </a>
         </div>
 
@@ -386,9 +386,9 @@ const Pricing: React.FC = () => (
               </li>
             ))}
           </ul>
-          <a href={WHATSAPP} target="_blank" rel="noreferrer"
+          <a href={PHONE_LINK} target="_blank" rel="noreferrer"
             className="block w-full text-center bg-sky-500 hover:bg-sky-400 text-white font-bold py-3.5 rounded-2xl transition-all duration-200 hover:scale-105">
-            Quero o Pro
+            Ligar agora
           </a>
         </div>
       </div>
@@ -424,7 +424,7 @@ const Testimonials: React.FC = () => (
           {
             name: 'Roberto S.',
             business: 'Contractor, New Jersey',
-            text: 'Eu estava perdendo contratos porque não atendia rápido. Agora o agente pega todas as chamadas e eu recebo um resumo no WhatsApp.',
+            text: 'Eu estava perdendo contratos porque não atendia rápido. Agora o agente pega todas as chamadas e eu recebo um resumo no celular.',
             stars: 5,
           },
         ].map(t => (
@@ -458,13 +458,13 @@ const FinalCTA: React.FC = () => (
         <p className="text-slate-400 mb-8 text-lg">
           Seu agente fica ativo em 48 horas. Sem contrato longo. Sem complicação.
         </p>
-        <a href={WHATSAPP} target="_blank" rel="noreferrer"
+        <a href={PHONE_LINK} target="_blank" rel="noreferrer"
           className="inline-flex items-center gap-3 bg-sky-500 hover:bg-sky-400 text-white font-bold text-lg px-10 py-5 rounded-full transition-all duration-200 hover:scale-105 glow">
           <Phone className="w-5 h-5" />
-          Falar com a equipe agora
+          Ligar agora — fale com nossa IA
           <ArrowRight className="w-5 h-5" />
         </a>
-        <p className="text-slate-600 text-sm mt-4">Resposta em menos de 1 hora • WhatsApp</p>
+        <p className="text-slate-600 text-sm mt-4">+1 (781) 653-7984 • Atendimento 24/7</p>
       </div>
     </div>
   </section>
